@@ -1,0 +1,16 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^91.0.0",
+    "nightwatch": "^1.6.4"
+  }
+}

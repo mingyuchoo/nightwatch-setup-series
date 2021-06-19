@@ -38,20 +38,23 @@
       "webdriver": {
         "start_process": true,
         "server_path": "node_modules/.bin/chromedriver",
-        "port": 9514
+        "port": 9515
+      },
+      "screenshots": {
+        "enabled": true,
+        "path": "tests_screens"
       },
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true,
         "chromeOptions": {
-          "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
           "args": [
             "headless",
             "no-sandbox",
-            "disable-gpu",
-            "ignore-certificate-errors"
-          ]
+            "disable-gpu"
+          ],
+          "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
         }
       }
     },
@@ -59,7 +62,7 @@
       "webdriver": {
         "start_process": true,
         "server_path": "node_modules/.bin/geckodriver",
-        "port": 9515
+        "port": 9516
       },
       "desiredCapabilities": {
         "browserName": "firefox",

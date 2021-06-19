@@ -123,3 +123,7 @@ elm-stuff/
 
 # Nightwatch
 tests_output/
+tests_screen*/
+
+# macOS
+.DS_Store

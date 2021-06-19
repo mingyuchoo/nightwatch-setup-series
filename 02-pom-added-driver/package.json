@@ -6,6 +6,7 @@
   "scripts": {
     "test:safari": "nightwatch --env safari",
     "test:chrome": "nightwatch --env chrome",
+    "test:headless": "nightwatch --env chrome-headless",
     "test:firefox": "nightwatch --env firefox"
   },
   "keywords": [],

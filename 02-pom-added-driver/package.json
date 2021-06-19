@@ -1,0 +1,19 @@
+{
+  "name": "02-pom-added-driver",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test:safari": "nightwatch --env safari",
+    "test:chrome": "nightwatch --env chrome",
+    "test:firefox": "nightwatch --env firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^91.0.1",
+    "geckodriver": "^2.0.0",
+    "nightwatch": "^1.7.5"
+  }
+}

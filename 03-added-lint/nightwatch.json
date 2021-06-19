@@ -1,0 +1,87 @@
+{
+  "src_folders": ["tests"],
+  "page_objects_path": "page-objects",
+  "globals_path": "./globals.js",
+  "selenium": {
+    "start_process": false
+  },
+  "test_settings": {
+    "safari": {
+      "webdriver": {
+        "start_process": true,
+        "server_path": "/usr/bin/safaridriver",
+        "port": 9513
+      },
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "chrome": {
+      "webdriver": {
+        "start_process": true,
+        "server_path": "node_modules/.bin/chromedriver",
+        "port": 9514
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "args": [
+          ]
+        }
+      }
+    },
+    "chrome-headless": {
+      "webdriver": {
+        "start_process": true,
+        "server_path": "node_modules/.bin/chromedriver",
+        "port": 9515,
+        "cli_args": [
+            "--port=9515"
+        ]
+      },
+      "screenshots": {
+        "enabled": true,
+        "path": "tests_screens"
+      },
+      "globals": {
+          "waitForConditionPollInterval": 300,
+          "waitForConditionTimeout": 15000,
+          "retryAssertionTimeout": 15000
+      },
+      "request_timeout_options": {
+          "timeout": 100000
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "chromeOptions": {
+          "args": [
+            "headless",
+            "--no-sandbox",
+            "disable-gpu",
+            "disable-web-security",
+            "ignore-certificate-errors"
+          ],
+          "binary": "/opt/google/chrome/chrome"
+        }
+      }
+    },
+    "firefox": {
+      "webdriver": {
+        "start_process": true,
+        "server_path": "node_modules/.bin/geckodriver",
+        "port": 9516
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "acceptInsecureCerts": true
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "03-added-lint",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "lint": "eslint --config .eslintrc.yaml --fix .",
+    "test:safari": "nightwatch --env safari",
+    "test:chrome": "nightwatch --env chrome",
+    "test:headless": "nightwatch --env chrome-headless",
+    "test:firefox": "nightwatch --env firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^91.0.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "geckodriver": "^2.0.0",
+    "nightwatch": "^1.7.5",
+    "prettier": "^2.3.1"
+  }
+}

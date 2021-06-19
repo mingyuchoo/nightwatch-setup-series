@@ -1,10 +1,10 @@
-# 02-pom-added-driver
+# 03-added-lint
 
 ## How to set up nightwatch project
 
 ```bash
-mkdir 02-pom-added-driver
-cd 02-pom-added-driver
+mkdir 03-added-lint
+cd 03-added-lint
 npm init -y
 npm install --save-dev \
    nightwatch chromedriver geckodriver
@@ -42,7 +42,7 @@ yarn test:firefox
 ## Project structure
 
 ```bash
-02-pom-added-driver
+03-added-lint
 ├── globals.js
 ├── nightwatch.json
 ├── package.json

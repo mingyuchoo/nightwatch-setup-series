@@ -49,8 +49,8 @@
       },
       "globals": {
           "waitForConditionPollInterval": 300,
-          "waitForConditionTimeout": 15000,
-          "retryAssertionTimeout": 15000
+          "waitForConditionTimeout": 5000,
+          "retryAssertionTimeout": 5000
       },
       "request_timeout_options": {
           "timeout": 100000
@@ -67,8 +67,7 @@
             "disable-gpu",
             "disable-web-security",
             "ignore-certificate-errors"
-          ],
-          "binary": "/opt/google/chrome/chrome"
+          ]
         }
       }
     },

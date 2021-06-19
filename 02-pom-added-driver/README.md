@@ -16,9 +16,9 @@ npm install --save-dev \
 ...
 
   "scripts": {
-    "test:safari": "nightwatch --env safari"
-    "test:chrome": "nightwatch --env chrome"
-    "test:firefox": "nightwatch --env firefox"
+    "test:safari": "nightwatch --env safari",
+    "test:chrome": "nightwatch --env chrome",
+    "test:firefox": "nightwatch --env firefox",
   },
 
 ...

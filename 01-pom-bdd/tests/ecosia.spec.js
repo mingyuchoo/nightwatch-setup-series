@@ -1,10 +1,11 @@
 describe("Ecosia", function () {
   test("demo test", function (browser) {
-    browser
-      .url("https://www.ecosia.org/")
-      .setValue("input[type=search]", "nightwatch")
-      .click("button[type=submit]")
-      .assert.containsText(".mainline-results", "Nightwatch.js")
+    let ecosia = browser.page.ecosia();
+    ecosia
+      .navigate()
+      .setValue("@searchBar", "nightwatch")
+      .click("@submit")
+      .assert.containsText("@results", "Nightwatch.js")
       .end();
   });
 });

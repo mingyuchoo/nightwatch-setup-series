@@ -38,23 +38,37 @@
       "webdriver": {
         "start_process": true,
         "server_path": "node_modules/.bin/chromedriver",
-        "port": 9515
+        "port": 9515,
+        "cli_args": [
+            "--port=9515"
+        ]
       },
       "screenshots": {
         "enabled": true,
         "path": "tests_screens"
       },
+      "globals": {
+          "waitForConditionPollInterval": 300,
+          "waitForConditionTimeout": 15000,
+          "retryAssertionTimeout": 15000
+      },
+      "request_timeout_options": {
+          "timeout": 100000
+      },
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
         "chromeOptions": {
           "args": [
             "headless",
-            "no-sandbox",
-            "disable-gpu"
+            "--no-sandbox",
+            "disable-gpu",
+            "disable-web-security",
+            "ignore-certificate-errors"
           ],
-          "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          "binary": "/opt/google/chrome/chrome"
         }
       }
     },

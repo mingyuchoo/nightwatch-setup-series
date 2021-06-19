@@ -7,5 +7,8 @@ module.exports = {
     submit: {
       selector: "button[type=submit]",
     },
+    results: {
+      selector: ".mainline-results",
+    },
   },
 };

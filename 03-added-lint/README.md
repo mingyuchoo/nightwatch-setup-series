@@ -16,6 +16,7 @@ npm install --save-dev \
 ...
 
   "scripts": {
+    "lint": "eslint --config .eslintrc.yaml --fix .",
     "test:safari": "nightwatch --env safari",
     "test:chrome": "nightwatch --env chrome",
     "test:firefox": "nightwatch --env firefox",

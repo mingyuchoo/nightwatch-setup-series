@@ -1,10 +1,10 @@
-# 01-pom-ecosia
+# 01-pom-bdd
 
 ## How to set up nightwatch project
 
 ```bash
-mkdir 01-pom-ecosia
-cd 01-pom-ecosia
+mkdir 01-pom-bdd
+cd 01-pom-bdd
 npm init -y
 npm install --save-dev nightwatch chromedriver
 ```
@@ -34,7 +34,7 @@ yarn test
 ## Project structure
 
 ```bash
-01-pom-ecosia
+01-pom-bdd
 ├── globals.js
 ├── nightwatch.json
 ├── package.json

@@ -1,5 +1,5 @@
 {
-  "name": "test-app",
+  "name": "01-pom-bdd",
   "version": "1.0.0",
   "description": "",
   "main": ".eslintrc.js",
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^91.0.0",
-    "nightwatch": "^1.6.4"
+    "chromedriver": "^91.0.1",
+    "nightwatch": "^1.7.5"
   }
 }

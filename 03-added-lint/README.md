@@ -10,7 +10,7 @@ npm install --save-dev \
    nightwatch chromedriver geckodriver
 ```
 
-## Edit `package.json`
+### Edit `package.json`
 
 ```json
 ...
@@ -25,7 +25,7 @@ npm install --save-dev \
 ...
 ```
 
-## How to test
+### How to test
 
 ```bash
 npm run test:safari
@@ -40,7 +40,7 @@ yarn test:chrome
 yarn test:firefox
 ```
 
-## Project structure
+### Project structure
 
 ```bash
 03-added-lint
@@ -51,4 +51,14 @@ yarn test:firefox
 │   └── ecosia.js
 └── tests
     └── ecosia.spec.js
+```
+
+## How to install modules by offline
+
+```bash
+yarn install --offline
+
+# or
+
+yarn install --offline --production # for deploy
 ```

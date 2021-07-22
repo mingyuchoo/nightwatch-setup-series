@@ -9,7 +9,7 @@ npm init -y
 npm install --save-dev nightwatch chromedriver
 ```
 
-## Edit `package.json`
+### Edit `package.json`
 
 ```json
 ...
@@ -21,7 +21,7 @@ npm install --save-dev nightwatch chromedriver
 ...
 ```
 
-## How to test
+### How to test
 
 ```bash
 npm run test
@@ -31,7 +31,7 @@ npm run test
 yarn test
 ```
 
-## Project structure
+### Project structure
 
 ```bash
 01-pom-bdd
@@ -42,4 +42,14 @@ yarn test
 │   └── ecosia.js
 └── tests
     └── ecosia.spec.js
+```
+
+## How to install modules by offline
+
+```bash
+yarn install --offline
+
+# or
+
+yarn install --offline --production # for deploy
 ```

@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chromedriver": "^91.0.1",
     "geckodriver": "^2.0.0",

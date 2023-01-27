@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chromedriver": "^91.0.1",
     "eslint": "^7.29.0",
